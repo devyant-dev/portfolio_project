@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300;400;700&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+:root {
+  --max-width: 1536px;
+
+  /* color */
+
+  --main_color: #13595A;
+  --sub_color: #1D7B6C;
+  --bg_color: #F3EBE9;
+  --black: #222;
+  --light_gray: #F1F1E6;
+
+  // font-size
+  --70px: 3.6458vw;
+  --50px: 2.6042vw;
+  --30px: 1.5625vw;
+  --25px: 1.3021vw;
+  --20px: 1.25rem;
+  //--18px: 1.125rem;
+  --18px: 0.9375vw;
+  --15px: 0.9375rem;
+
+
+}
+
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,
+details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,
+iframe,img,ins,kbd,label,legend,li,main,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,
+strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font: inherit;
+  vertical-align:baseline;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{
+  display:block;
+}
+
+[hidden]{
+  display:none;
+}
+
+body{
+  font-family: 'Nanum Myeongjo', serif;
+  color: var(--black);
+  font-weight: 400;
+  background-color: var(--bg_color);
+}
+
+menu,ol,ul{
+  list-style:none;
+}
+
+blockquote,q{
+  quotes:none;
+}
+
+blockquote:after,blockquote:before,q:after,q:before{
+  content:'';
+  content:none;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+
+
+.container {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // align-items: center;
+  width: 100%;
+  margin: 150px auto;
+  padding: 0 5%;
+  // background-color: #ddd;
+  // color: var(--light_gray);
+
+  .page_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.c_box {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: skyblue;
+}
+
+/*# sourceMappingURL=/sm/04f4d35563f7cf9516264fcbb6e11a85def2ae5616df66563711867fe05befec.map */

@@ -1,0 +1,226 @@
+$mobile: 320px;
+$tablet: 768px;
+
+
+// @mixin device ($min, $max) {
+
+//   @media (min-width: $min) and (max-width: $max) {
+//     @content;
+
+//   }
+// }
+
+
+@mixin mobile ($min, $max) {
+
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+
+  }
+}
+
+
+
+//mobile
+
+@include mobile ($mobile, $tablet) {
+
+  .profile_wrapper{
+    display: block;
+    width: 100%;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--main_color);
+  
+    .profile_img{
+      width: 64vw;
+      height: 64vw;
+      margin: 0 auto;
+
+    }
+  
+    .profile_txt{
+      width: 100%;
+      padding-left: 0;
+      padding-top: 30px;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  .resume_wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  
+    .resume_part01{
+      width: 100%;
+      padding-right: 0;
+      border-right: none;
+  
+      .contact_me{
+        // width: 100%;
+        // border-bottom: 1px solid var(--main_color);
+  
+        .contact_content{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin-bottom: 30px;
+          
+          .cont_type{
+            width: auto;
+            font-size: 20px;
+          }
+  
+          .cont_value{
+            width: auto;
+            font-size: 15px;
+          }
+        }
+        
+      }
+  
+  
+      .education{
+  
+        .edu_con_wrap{
+          margin-bottom: 50px;
+  
+          &:last-child{
+            margin-bottom: 0;
+          }
+  
+          .edu_con_title{
+            font-size: 25px;
+            font-weight: 700;
+          }
+  
+          .edu_con_sub_title{
+            margin: 10px 0 20px;
+            font-size: 18px;
+          }
+  
+          .edu_con_period{
+            font-size: 15px;
+          }
+        }
+  
+  
+      }
+    }
+  
+    .resume_part02{
+      width: 100%;
+      padding-left: 0;
+  
+      .skills{
+        width: 100%;
+        border-bottom: 1px solid var(--main_color);
+  
+        .skill_common_cont{
+  
+          > .resume_sub_title{
+            margin-bottom: 30px;
+            text-align: center;
+          }
+  
+          .skill_icon_wrap{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+            //padding-right: 30%;
+  
+            .skill_icon{
+              width: 33.3%;
+              margin-right: 0;
+  
+              .skill_circle{
+                width: 21.3333vw;
+                height:  21.3333vw;
+                margin: 0 auto;
+  
+                >span{
+                  font-size: 30px;
+                }
+              }
+  
+              .skill_txt{
+                font-size: 14px;
+              }
+            }
+           
+          }
+        }
+  
+        .frontend{
+          margin-bottom: 20px;
+        }
+  
+        .deploy{
+          display: block;
+          width: 100%;
+          margin-bottom: 50px;
+        }
+  
+        .tool{
+          display: block;
+          width: 100%;
+        }
+  
+      }
+  
+      .work_ex{
+        width: 100%;
+        border-bottom: 1px solid var(--main_color);
+  
+        .resume_period{
+          margin: 10px 0 20px 0;
+          font-size: 15px;
+        }
+  
+        .resume_txt{
+          font-size: 15px;
+        }
+      }
+  
+  
+    }
+  
+  }
+
+
+  .frontend{
+
+    .skill_icon{
+      margin-bottom: 30px;
+    }
+  }
+
+
+  // 공통 클래스
+
+  .resume_title{
+    font-size: 35px;
+    color: var(--main_color);
+    font-weight: 700;
+    border-bottom: 1px solid var(--main_color);
+  }
+  
+  .resume_sub_title{
+    font-size: 25px;
+    font-weight: 700;
+  }
+  
+  
+  .resume_title_common{
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .resume_content_common{
+    width: 100%;
+    padding: 60px 0;
+  }
+
+}
