@@ -3,8 +3,7 @@ import Context  from '@/component/Context';
 import Layout from '@/component/Layout';
 import Head from 'next/head';
 import Link from 'next/link';
-
-
+import Navigation from '@/component/Navigation';
 
 
 export default function App({ Component, pageProps }) {
@@ -21,9 +20,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       </Head>
-      <Link href='/'>home</Link>
-      <Link href='/profile'>profile</Link>
-      <Link href='/work'>work</Link>
+      <Navigation />
       <Context>
         <Layout>
           <Component {...pageProps} />

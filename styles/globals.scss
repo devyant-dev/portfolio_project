@@ -12,6 +12,7 @@
   --light_gray: #F1F1E6;
 
   // font-size
+  --80px: 4.1667vw;
   --70px: 3.6458vw;
   --50px: 2.6042vw;
   --30px: 1.5625vw;
@@ -41,6 +42,14 @@ strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,
 a{
   text-decoration: none;
   color: inherit;
+}
+
+button{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{

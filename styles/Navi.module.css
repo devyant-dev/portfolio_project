@@ -1,0 +1,22 @@
+.menu_container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: limegreen;
+}
+.menu_container .menu_wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #ddd;
+  opacity: 0.8;
+}
+.menu_container .menu_wrapper .close_box {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  opacity: 0.1;
+  z-index: 0;
+}/*# sourceMappingURL=Navi.module.css.map */
