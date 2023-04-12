@@ -21,18 +21,20 @@ const Navigation = () => {
 
     <div>
       <div className={style.nav_container}>
-        <h1 className={style.logo}>
-          <img src="/img/profile_01.png" alt="" />
-        </h1>
+        <div className={style.nav_wrapper}>
+          <h1 className={style.logo}>
+            <img src="/img/profile_01.png" alt="" />
+          </h1>
 
-        <p>
-          뭐라도적자
-        </p>
+          <p>
+            뭐라도적자
+          </p>
 
-        <div onClick={() => clickMenu()} className={`${style.nav_btn}`}>
-          <div className={`${style.nav_line} ${style.n_line01}`}></div>
-          <div className={`${style.nav_line} ${style.n_line02}`}></div>
-          <div className={`${style.nav_line} ${style.n_line03}`}></div>
+          <div onClick={() => clickMenu()} className={`${style.nav_btn}`}>
+            <div className={`${style.nav_line} ${style.n_line01}`}></div>
+            <div className={`${style.nav_line} ${style.n_line02}`}></div>
+            <div className={`${style.nav_line} ${style.n_line03}`}></div>
+          </div>
         </div>
       </div>
 
@@ -48,17 +50,17 @@ const Navigation = () => {
 
             <nav className={style.menu_box}>
             
-              <button className={`${style.menu_btn} ${style.btn01}`} onClick={() => router.push('/')}>
+              <button className={`${style.menu_btn} ${style.btn01}`} onClick={() => router.push('/').then( () => closeMenu() ) }>
                 <span className={style.btn_num}>01</span>
                 <span className={style.btn_title}>home</span>
               </button>
 
-              <button className={`${style.menu_btn} ${style.btn02}`} onClick={() => router.push('/profile')}>
+              <button className={`${style.menu_btn} ${style.btn02}`} onClick={() => router.push('/profile').then( () => closeMenu() )}>
                 <span className={style.btn_num}>02</span>
                 <span className={style.btn_title}>profile</span>
               </button>
 
-              <button className={`${style.menu_btn} ${style.btn03}`} onClick={() => router.push('/work')}>
+              <button className={`${style.menu_btn} ${style.btn03}`} onClick={() => router.push('/work').then( () => closeMenu() )}>
                 <span className={style.btn_num}>03</span>
                 <span className={style.btn_title}>work</span>
               </button>
