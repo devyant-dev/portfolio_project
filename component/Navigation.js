@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import style from '@/styles/Navi.module.scss';
-import Image from 'next/image';
 
 
 const Navigation = () => {

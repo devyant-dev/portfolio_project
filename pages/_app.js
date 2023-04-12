@@ -2,8 +2,8 @@ import '@/styles/globals.scss';
 import Context  from '@/component/Context';
 import Layout from '@/component/Layout';
 import Head from 'next/head';
-import Link from 'next/link';
 import Navigation from '@/component/Navigation';
+
 
 
 export default function App({ Component, pageProps }) {
