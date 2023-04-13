@@ -1,9 +1,12 @@
 import React from "react"
 
 export default function Home() {
+
+
+
   return (
-    <>
-      index
-    </>
+    <div>
+      nova
+    </div>
   )
 }

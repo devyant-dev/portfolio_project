@@ -19,6 +19,7 @@ const ProjectItem = ({obj, idx}) => {
         return obj;
       })
     )
+
   }
 
 
@@ -43,7 +44,7 @@ const ProjectItem = ({obj, idx}) => {
 
  
         { obj.status == true ? (
-        <div>
+        <div className={style.add_info}>
           <p className={style.info_description}>
             {obj.description}
           </p>
