@@ -63,48 +63,48 @@
     width: 100%;
     padding: 40px;
     border-bottom: 2px solid var(--main_color);
-    transition: all 1000ms;
+    transition: all 2500ms;
 
 
-    &.box_act:hover{
-      // pointer-events: none;
-    }
+    // &.box_act:hover{
+    //   pointer-events: none;
+    // }
 
-    &:hover{
-      background-color: var(--main_color);
+    // &:hover{
+    //   background-color: var(--main_color);
 
-      .work_info_wrap{
+    //   .work_info_wrap{
 
-        .info_num,
-        .info_title,
-        .info_project,
-        .info_cate,
-        .sub_cate{
-          color: var(--bg_color);
-        }
+    //     .info_num,
+    //     .info_title,
+    //     .info_project,
+    //     .info_cate,
+    //     .sub_cate{
+    //       color: var(--bg_color);
+    //     }
 
-        .info_num{
-          &::after{
-            background-color: var(--bg_color);
-          }
-        }
-      }
+    //     .info_num{
+    //       &::after{
+    //         background-color: var(--bg_color);
+    //       }
+    //     }
+    //   }
 
-      .work_sub_wrap{
-        .sub_cate_wrap{
-          .sub_cate{
-            color: var(--bg_color);
-          }
-        }
+    //   .work_sub_wrap{
+    //     .sub_cate_wrap{
+    //       .sub_cate{
+    //         color: var(--bg_color);
+    //       }
+    //     }
         
-        .sub_icon_wrap{
-          .plus_row,
-          .plus_column{
-            background-color: var(--bg_color);
-          }
-        }
-      }
-    }
+    //     .sub_icon_wrap{
+    //       .plus_row,
+    //       .plus_column{
+    //         background-color: var(--bg_color);
+    //       }
+    //     }
+    //   }
+    // }
   
     .work_info_wrap{
       width: 80%;
@@ -216,63 +216,63 @@
       }
     }
 
-    // &.box_act{
+    &.box_act{
 
-    //   .work_info_wrap{
-    //     width: 48%;
+      .work_info_wrap{
+        width: 48%;
 
-    //     .add_info{
-    //       opacity: 0;
-    //       animation-name: opacity0to1;
-    //       animation-duration: 1000ms;
-    //       animation-delay: 500ms;
-    //       animation-fill-mode: forwards;
-    //       //display: none;
+        .add_info{
+          opacity: 0;
+          animation-name: opacity0to1;
+          animation-duration: 1000ms;
+          animation-delay: 500ms;
+          animation-fill-mode: forwards;
+          //display: none;
 
-    //       .info_description{
-    //         margin: 50px 0;
-    //         font-family: 'Comfortaa', cursive;;
-    //         font-size: 1rem;
-    //         color: var(--main_color);
-    //       }
+          .info_description{
+            margin: 50px 0;
+            font-family: 'Comfortaa', cursive;;
+            font-size: 1rem;
+            color: var(--main_color);
+          }
   
-    //       .info_btn{
-    //         width: 8.3333vw;
-    //         min-width: 100px;
-    //         max-width: 160px;
-    //         padding: 20px 0;
-    //         color: var(--main_color);
-    //         text-align: center;
-    //         border: 1px solid var(--main_color);
-    //       }
-    //     }
+          .info_btn{
+            width: 8.3333vw;
+            min-width: 100px;
+            max-width: 160px;
+            padding: 20px 0;
+            color: var(--main_color);
+            text-align: center;
+            border: 1px solid var(--main_color);
+          }
+        }
 
-    //   }
+      }
       
-    //   .work_sub_wrap{
-    //     display: none;
-    //   }
+      .work_sub_wrap{
+        display: none;
+      }
 
-    //   .work_img_wrap{
-    //     width: 50%;
-    //     height: 0;
-    //     max-width: 728px;
-    //     max-height: 726px;
-    //     overflow-y: auto;
-    //     opacity: 1;
-    //     transition: height 500ms;
-    //     animation-name: height0to1;
-    //     animation-duration: 800ms;
-    //     animation-delay: 300ms;
-    //     animation-fill-mode: forwards;
+      .work_img_wrap{
+        width: 50%;
+        height: 0;
+        max-width: 728px;
+        max-height: 726px;
+        overflow-y: auto;
+        opacity: 1;
+        transition: height 500ms;
+        animation-name: height0to1;
+        animation-duration: 800ms;
+        animation-delay: 300ms;
+        animation-fill-mode: forwards;
 
 
-    //     img{
-    //       width: 100%;
-    //     }
-    //   }
+        img{
+          width: 100%;
+        }
+      }
       
-    // }
+    }
 
 
   }

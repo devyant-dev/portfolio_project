@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import style from '@/styles/Work.module.scss';
 import ProjectItem from '@/component/ProjectItem';
 import { MyData } from '@/component/Context';
+import ItemPopUp from '@/component/ItemPopUp';
 
 const Work = () => {
 
@@ -16,13 +17,15 @@ const Work = () => {
         <span className={`${style.outline} ${style.line01}`}></span>
         <span className={`${style.outline} ${style.line02}`}></span>
         <span className={`${style.outline} ${style.line03}`}></span>
+
+        <ItemPopUp />
         
-        { 
+        {/* { 
           data.map( (obj, idx) => (
             <ProjectItem key={idx} idx={idx} obj={obj}/>
             )
           )
-        }
+        } */}
           
         {/* { data.workdata.length%2 == 0 ? '' : <div className={style.empty_wrapper}></div> }  */}
 

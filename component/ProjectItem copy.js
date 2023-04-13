@@ -5,8 +5,6 @@ import Link from 'next/link';
 
 const ProjectItem = ({obj, idx}) => {
 
-  console.log(obj)
-
   const {data, setData} = useContext(MyData);
   
   const clickDiv = () => {
@@ -21,9 +19,10 @@ const ProjectItem = ({obj, idx}) => {
         return obj;
       })
     )
-    
-    console.log(obj.number)
+
   }
+
+
 
   return (
     <div key={idx} onClick={() => clickDiv()} className={`${style.work_wrapper} ${obj.status == true ? style.box_act : ""}`}>
@@ -44,7 +43,7 @@ const ProjectItem = ({obj, idx}) => {
         </p>
 
  
-        {/* { obj.status == true ? (
+        { obj.status == true ? (
         <div className={style.add_info}>
           <p className={style.info_description}>
             {obj.description}
@@ -53,7 +52,7 @@ const ProjectItem = ({obj, idx}) => {
             <Link href={obj.link} target='_blank'>Visit Site</Link>
           </p>
         </div> ): ''
-        } */}
+        }
       </div>
 
       <div className={style.work_sub_wrap}>
@@ -70,12 +69,12 @@ const ProjectItem = ({obj, idx}) => {
 
       </div>
 
-      {/* {
+      {
         obj.status == true ? (
         <div className={style.work_img_wrap}>
           <img src={obj.src} alt={obj.title} />
         </div> ) : ''
-      } */}
+      }
 
     </div>
   );
