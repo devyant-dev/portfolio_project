@@ -1,0 +1,125 @@
+$mobile: 320px;
+$tablet: 768px;
+
+
+// @mixin device ($min, $max) {
+
+//   @media (min-width: $min) and (max-width: $max) {
+//     @content;
+
+//   }
+// }
+
+
+@mixin mobile ($min, $max) {
+
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+
+  }
+}
+
+
+
+//mobile
+
+@include mobile ($mobile, $tablet) {
+  .pop_container{
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+
+    &::before{
+      display: none;
+    }
+  
+    .pop_wrapper{
+      width: 100%;
+      height: 100%;
+  
+      .pop_title_area{
+        padding: 30px 5%;
+
+        .pop_title{
+          font-size: 1.3rem;
+        }
+
+        .close_btn{
+          width: 20px;
+        }
+      }
+  
+      .pop_info_area{
+        width: 100%;
+        height: calc(100vh - (60px + 1.3rem));
+        margin-top: calc(62px + 1.3rem);
+  
+        .pop_info_img{
+          max-height: 250px;
+
+        }
+  
+        .pop_info_txt_box{
+          flex-wrap: wrap;
+          padding: 50px 5%;
+          // background-color: red;
+  
+          .pop_info_main{
+            width: 100%;
+            max-width: 100%;
+            // background-color: antiquewhite;
+  
+            .info_title{
+              margin-bottom: 20px;
+              font-size: 50px;
+              letter-spacing: -1px;
+            }
+  
+            .info_content{
+              margin-bottom: 20px;
+            }
+          }
+  
+          .pop_info_sub{
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+  
+            p{
+              font-size: 13px;
+              letter-spacing: 1px;
+            }
+  
+            .info_team{
+              font-family: 'Comfortaa', cursive;
+              text-transform: uppercase;
+            }
+
+            .info_cate{
+              margin: 25px 0;
+            }
+            
+            .info_btn{
+              width: 100%;
+              text-align: center;
+              border: 1px solid var(--main_color);
+  
+              a{
+                display: block;
+                width: 100%;
+                padding: 20px 0;
+                font-size: 17px;
+              }
+            }
+  
+          }
+        }
+  
+      }
+  
+  
+    }
+  }
+
+}

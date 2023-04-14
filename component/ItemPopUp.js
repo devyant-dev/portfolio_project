@@ -16,6 +16,10 @@ const ItemPopUp = ({obj, idx}) => {
           <p className={style.pop_title}>
             {data[2].title}
           </p>
+
+          <div className={style.close_btn}>
+            X
+          </div>
         </div>
 
         <div className={style.pop_info_area}>
@@ -43,7 +47,7 @@ const ItemPopUp = ({obj, idx}) => {
                 {data[2].count}
               </p>
               
-              <p>
+              <p className={style.info_cate}>
                 {data[2].cate}
               </p>
 

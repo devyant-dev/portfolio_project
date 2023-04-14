@@ -31,17 +31,24 @@
     background-color: var(--bg_color);
 
     .pop_title_area{
+      display: flex;
+      justify-content: space-between;
       width: 100%;
-      padding: 25px 5%;
+      padding: 25px 7%;
       position: absolute;
       top: 0;
       left: 0;
+      background-color: var(--bg_color);
       border-bottom: 2px solid var(--main_color);
       // background-color: yellowgreen;
 
       .pop_title{
         font-size: 2vw;
         color: var(--main_color);
+      }
+
+      .close_btn{
+        width: 20px;
       }
     }
 
@@ -64,7 +71,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 60px 5%;
+        padding: 80px 7%;
         // background-color: red;
 
         .pop_info_main{
@@ -74,7 +81,7 @@
 
           .info_title{
             margin-bottom: 30px;
-            font-size: 6vw;
+            font-size: 5.5vw;
             color: var(--main_color);
           }
 
@@ -109,7 +116,8 @@
             a{
               display: block;
               width: 100%;
-              padding: 10px 0;
+              padding: 15px 0;
+              font-size: 22px
             }
           }
 
@@ -121,3 +129,6 @@
 
   }
 }
+
+
+@import './_Popup.module.scss';
