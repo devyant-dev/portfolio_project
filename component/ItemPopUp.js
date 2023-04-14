@@ -1,58 +1,71 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import style from '@/styles/Popup.module.scss';
 import { MyData } from './Context';
 import Link from 'next/link';
 
-const ItemPopUp = ({obj, idx}) => {
+const ItemPopUp = () => {
 
   const {data, setData} = useContext(MyData);
+  const [obj] = data.filter(oj=>oj.status==true);
+
+  const closeBtn = () => {
+    setData(
+      [...data].map(obj => {
+        obj.status = false;
+        return obj;
+      })
+    )
+    
+  }
+
+
 
   //console.log(obj)
 
   return (
-    <div className={style.pop_container}>
+    <div className={`${style.pop_container} ${obj?.status == true ? style.act_pop : ""}`}>
       <div className={style.pop_wrapper}>
         <div className={style.pop_title_area}>
           <p className={style.pop_title}>
-            {data[2].title}
+            {obj?.title}
           </p>
 
-          <div className={style.close_btn}>
+          <div onClick={() => closeBtn()} className={`${style.close_btn}`}>
             X
           </div>
         </div>
 
         <div className={style.pop_info_area}>
           <div className={style.pop_info_img}>
-            <img src={data[0].src} alt="" />
+            <img src={obj?.src} alt="" />
           </div>
 
           <div className={style.pop_info_txt_box}>
             <div className={style.pop_info_main}>
               <p className={style.info_title}>
-              {data[4].title}
+              {obj?.title}
               </p>
 
               <p className={style.info_content}>
-                {data[3].description}
+                {obj?.description}
               </p>
             </div>
 
             <div className={style.pop_info_sub}>
               <p className={style.info_team}>
-                {data[3].info}
+                {obj?.info}
               </p>
               
               <p>
-                {data[2].count}
+                {obj?.count}
               </p>
               
               <p className={style.info_cate}>
-                {data[2].cate}
+                {obj?.cate}
               </p>
 
               <p className={style.info_btn}>
-                <Link target="_blank" href={data[2].link}>Visit Site</Link>
+                <Link target="_blank" href={obj?.link || ''}>Visit Site</Link>
               </p>
             </div>
           </div>

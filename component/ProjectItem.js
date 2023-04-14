@@ -23,11 +23,13 @@ const ProjectItem = ({obj, idx}) => {
       })
     )
     
-    console.log(obj.number)
+    // console.log(obj.number)
   }
 
+  
+
   return (
-    <div key={idx} onClick={() => clickDiv()} className={`${style.work_wrapper} ${obj.status == true ? style.box_act : ""}`}>
+    <div key={idx} onClick={() => clickDiv()} className={`${style.work_wrapper}`}>
       <div className={style.work_info_wrap}>
         <p className={style.info_num}>
           0{obj.number + 1}
@@ -77,8 +79,6 @@ const ProjectItem = ({obj, idx}) => {
           <img src={obj.src} alt={obj.title} />
         </div> ) : ''
       } */}
-
-      <ItemPopUp obj={obj} idx={idx}/>
     </div>
 
   );

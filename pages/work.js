@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import style from '@/styles/Work.module.scss';
 import ProjectItem from '@/component/ProjectItem';
 import { MyData } from '@/component/Context';
+import ItemPopUp from '@/component/ItemPopUp';
 
 const Work = () => {
 
@@ -25,7 +26,8 @@ const Work = () => {
             )
           )
         }
-          
+
+        <ItemPopUp />
         {/* { data.workdata.length%2 == 0 ? '' : <div className={style.empty_wrapper}></div> }  */}
 
       </div>

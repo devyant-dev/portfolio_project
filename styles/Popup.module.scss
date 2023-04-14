@@ -5,7 +5,13 @@
   height: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100%;
+  z-index: 1;
+  transition: all 700ms;
+
+  &.act_pop{
+    left: 0%;
+  }
 
   &::before{
     content: "";
@@ -20,7 +26,7 @@
     background-image: url('../public/img/green_bg2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    opacity: 0.5;
   }
 
   .pop_wrapper{
