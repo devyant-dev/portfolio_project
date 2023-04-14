@@ -7,10 +7,12 @@
   top: 0;
   left: 100%;
   z-index: 1;
-  transition: all 700ms;
+  transition: all 500ms;
 
   &.act_pop{
-    left: 0%;
+    left: 0;
+
+
   }
 
   &::before{
@@ -26,14 +28,14 @@
     background-image: url('../public/img/green_bg2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.5;
+    opacity: 0.6;
   }
 
   .pop_wrapper{
     width: 90vw;
     height: 100vh;
     position: relative;
-    overflow-y: auto;
+    transition: all 1000ms;
     background-color: var(--bg_color);
 
     .pop_title_area{
@@ -66,7 +68,7 @@
       .pop_info_img{
         width: 100%;
         max-height: 300px;
-        overflow-y: auto;
+        overflow: hidden;
 
         img{
           width: 100%;
@@ -131,10 +133,53 @@
       }
 
     }
-
-
   }
 }
+
+@keyframes left0to1{
+
+  0%{
+    left: 100%;
+  }
+
+  100%{
+    left: 0;
+  }
+}
+
+@keyframes left1to0{
+
+  0%{
+    left: 0;
+  }
+
+  100%{
+    left: 100%;
+  }
+}
+
+
+
+@keyframes opa0to1{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes opa1to0{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
 
 
 @import './_Popup.module.scss';
