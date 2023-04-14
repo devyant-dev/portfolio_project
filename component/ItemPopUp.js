@@ -15,7 +15,7 @@ const ItemPopUp = () => {
         return obj;
       })
     )
-    
+    document.documentElement.style = `overflow: auto`;
   }
 
 

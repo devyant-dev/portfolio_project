@@ -23,6 +23,7 @@ const ProjectItem = ({obj, idx}) => {
       })
     )
     
+    document.documentElement.style = `overflow: hidden`;
     // console.log(obj.number)
   }
 
