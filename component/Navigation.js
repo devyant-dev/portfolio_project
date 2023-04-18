@@ -21,13 +21,13 @@ const Navigation = () => {
     <div>
       <div className={style.nav_container}>
         <div className={style.nav_wrapper}>
-          <h1 className={style.logo}>
-            <img src="/img/profile_01.png" alt="" />
+          <h1 onClick={() => router.push('/')} className={style.logo}>
+            <img src="/img/nav_img.png" alt="logo" />
           </h1>
 
-          <p>
-            뭐라도적자
-          </p>
+          {/* <p>
+            EST 2022
+          </p> */}
 
           <div onClick={() => clickMenu()} className={`${style.nav_btn}`}>
             <div className={`${style.nav_line} ${style.n_line01}`}></div>
@@ -43,7 +43,7 @@ const Navigation = () => {
 
           <div className={style.menu_area}>
 
-            <div onClick={() => closeMenu()} className={`${style.close_btn} ${act == false ? {display: "none"} : {display: "block"}}`}>
+            <div onClick={() => closeMenu()} className={`${style.close_btn}`}>
               X
             </div>
 

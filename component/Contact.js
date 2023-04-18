@@ -5,10 +5,10 @@ const Contact = () => {
 
 
   const tel = [
-    {val: 'Phpne', con: '010-1111-1111'},
+    {val: 'Phpne', con: '010-2154-1107'},
     {val: 'E-mail', con: 'devvyves@gmail.com'},
-    {val: 'GitHub', con: 'devvyves@gmail.com'},
-    {val: 'Velog', con: 'devvyves@gmail.com'}
+    {val: 'GitHub', con: 'github.com/devyant-dev'}
+    // {val: 'Velog', con: 'devvyves@gmail.com'}
   ];
 
   return (
@@ -35,11 +35,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
-// 20.9 11
-// 21.3 12
-// 21.9 21
-// 22.3 22
-// 22.9 X
-// 23.3 31

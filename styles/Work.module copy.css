@@ -39,27 +39,7 @@
   width: 100%;
   padding: 40px;
   border-bottom: 2px solid var(--main_color);
-  transition: all 1000ms;
-}
-.work_container .work_wrapper:hover {
-  background-color: var(--main_color);
-}
-.work_container .work_wrapper:hover .work_info_wrap .info_num,
-.work_container .work_wrapper:hover .work_info_wrap .info_title,
-.work_container .work_wrapper:hover .work_info_wrap .info_project,
-.work_container .work_wrapper:hover .work_info_wrap .info_cate,
-.work_container .work_wrapper:hover .work_info_wrap .sub_cate {
-  color: var(--bg_color);
-}
-.work_container .work_wrapper:hover .work_info_wrap .info_num::after {
-  background-color: var(--bg_color);
-}
-.work_container .work_wrapper:hover .work_sub_wrap .sub_cate_wrap .sub_cate {
-  color: var(--bg_color);
-}
-.work_container .work_wrapper:hover .work_sub_wrap .sub_icon_wrap .plus_row,
-.work_container .work_wrapper:hover .work_sub_wrap .sub_icon_wrap .plus_column {
-  background-color: var(--bg_color);
+  transition: all 2500ms;
 }
 .work_container .work_wrapper .work_info_wrap {
   width: 80%;
@@ -148,6 +128,50 @@
   opacity: 0;
 }
 .work_container .work_wrapper .work_img_wrap img {
+  width: 100%;
+}
+.work_container .work_wrapper.box_act .work_info_wrap {
+  width: 48%;
+}
+.work_container .work_wrapper.box_act .work_info_wrap .add_info {
+  opacity: 0;
+  animation-name: opacity0to1;
+  animation-duration: 1000ms;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+}
+.work_container .work_wrapper.box_act .work_info_wrap .add_info .info_description {
+  margin: 50px 0;
+  font-family: "Comfortaa", cursive;
+  font-size: 1rem;
+  color: var(--main_color);
+}
+.work_container .work_wrapper.box_act .work_info_wrap .add_info .info_btn {
+  width: 8.3333vw;
+  min-width: 100px;
+  max-width: 160px;
+  padding: 20px 0;
+  color: var(--main_color);
+  text-align: center;
+  border: 1px solid var(--main_color);
+}
+.work_container .work_wrapper.box_act .work_sub_wrap {
+  display: none;
+}
+.work_container .work_wrapper.box_act .work_img_wrap {
+  width: 50%;
+  height: 0;
+  max-width: 728px;
+  max-height: 726px;
+  overflow-y: auto;
+  opacity: 1;
+  transition: height 500ms;
+  animation-name: height0to1;
+  animation-duration: 800ms;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
+}
+.work_container .work_wrapper.box_act .work_img_wrap img {
   width: 100%;
 }
 
@@ -255,4 +279,4 @@
   .empty_wrapper {
     display: none;
   }
-}/*# sourceMappingURL=Work.module.css.map */
+}/*# sourceMappingURL=Work.module copy.css.map */

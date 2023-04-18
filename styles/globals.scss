@@ -19,7 +19,7 @@
   --25px: 1.3021vw;
   --20px: 1.25rem;
   //--18px: 1.125rem;
-  --18px: 0.9375vw;
+  --18px: 1.125rem;
   --15px: 0.9375rem;
 
 
@@ -29,6 +29,8 @@
   --cursor-outline-shade: 0.3;
   --cursor-size: 10px;
   --cursor-outline-size: 12px;
+
+  --ti-cursor-color: #1D7B6C;
 
 }
 
@@ -137,7 +139,123 @@ table{
 }
 /*# sourceMappingURL=/sm/04f4d35563f7cf9516264fcbb6e11a85def2ae5616df66563711867fe05befec.map */
 
+.typed_area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 300px);
+
+  .typed_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+.ti-cursor {
+  font-size: 4.6875vw;
+}
+
+[data-typeit-id]{
+  display: block;
+  width: 100%;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 4.6875vw;
+  line-height: 1.2;
+  color: var(--main_color);
+}
+
+.home_btn{
+  margin-top: 80px;
+  padding: 15px 50px;
+  cursor: pointer;
+  transition: all 500ms;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  color: var(--main_color);
+  border: 1px solid var(--main_color);
+
+  &:hover{
+    color: var(--bg_color);
+    background-color: var(--main_color);
+  }
+}
+
+$mobile: 320px;
+$tablet: 768px;
+
+
+// @mixin device ($min, $max) {
+
+//   @media (min-width: $min) and (max-width: $max) {
+//     @content;
+
+//   }
+// }
+
+
+@mixin mobile ($min, $max) {
+
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+
+  }
+}
 
 
 
+//mobile
 
+@include mobile ($mobile, $tablet) {
+
+  .container {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
+    margin: 75px auto;
+    // background-color: #ddd;
+    // color: var(--light_gray);
+  
+    .page_container{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+  }
+
+  .typed_area{
+    height: calc(100vh - 150px);
+
+    .typed_box{
+
+    }
+  }
+  
+  .home_btn{
+    margin-top: 40px;
+    padding: 15px 40px;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 1.1;
+  }
+  
+  .ti-cursor {
+    font-size: 45px;
+    }
+  
+    [data-typeit-id]{
+      font-size: 45px;
+    }
+  
+
+}

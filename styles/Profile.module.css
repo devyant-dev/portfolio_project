@@ -19,6 +19,8 @@
   width: calc(100% - 19.27vw);
   padding-left: 3.6458vw;
   font-size: var(--30px);
+  line-height: 1.7;
+  word-break: keep-all;
 }
 
 .resume_wrapper {
@@ -132,11 +134,12 @@
 }
 .resume_wrapper .resume_part02 .work_ex .resume_period {
   margin: 15px 0 30px 0;
-  font-size: var(--20px);
+  font-size: var(--18px);
   color: var(--sub_color);
 }
 .resume_wrapper .resume_part02 .work_ex .resume_txt {
-  font-size: var(--20px);
+  font-size: var(--18px);
+  line-height: 1.5;
 }
 
 .resume_title {

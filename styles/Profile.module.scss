@@ -21,6 +21,8 @@
     width: calc(100% - 19.270vw);
     padding-left: 3.6458vw;
     font-size: var(--30px);
+    line-height: 1.7;
+    word-break: keep-all;
   }
 }
 
@@ -166,12 +168,13 @@
 
       .resume_period{
         margin: 15px 0 30px 0;
-        font-size: var(--20px);
+        font-size: var(--18px);
         color: var(--sub_color);
       }
 
       .resume_txt{
-        font-size: var(--20px);
+        font-size: var(--18px);
+        line-height: 1.5;
       }
     }
 
