@@ -8,6 +8,7 @@
   left: 100%;
   z-index: 1;
   transition: all 500ms;
+  background-color: var(--bg_color);
 
   &.act_pop{
     left: 0;
@@ -36,7 +37,7 @@
     height: 100%;
     position: relative;
     transition: all 1000ms;
-    background-color: var(--bg_color);
+
 
     .pop_title_area{
       display: flex;
