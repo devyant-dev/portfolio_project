@@ -52,7 +52,7 @@ $tablet: 768px;
   
       .pop_info_area{
         width: 100%;
-        height: calc(100vh - (60px + 1.3rem));
+        height: calc(100% - (60px + 1.3rem));
         margin-top: calc(62px + 1.3rem);
   
         .pop_info_img{
