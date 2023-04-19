@@ -9,13 +9,14 @@ const ItemPopUp = () => {
   const [obj] = data.filter(oj=>oj.status==true);
 
   const closeBtn = () => {
+    document.documentElement.style = `overflow-y: auto`;
+
     setData(
       [...data].map(obj => {
         obj.status = false;
         return obj;
       })
     )
-    // document.documentElement.style = `overflow: auto`;
   }
 
 

@@ -28,7 +28,7 @@ $tablet: 768px;
     justify-content: flex-start;
     width: 100%;
     height: 200%;
-    overflow-y: auto;
+    // overflow-y: auto;
 
     &::before{
       display: none;
